@@ -2,10 +2,239 @@
 <html>
 
 <head>
-
+    <link href="styles/general.css" rel="stylesheet">
+    <link href="styles/homepage.css" rel="stylesheet">
+    <link href="styles/experience-entries.css" rel="stylesheet">
+    <link href="styles/project-entries.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="header">
+        <div>
+            LAUREN DONNELLY
+        </div>
+    </div>
+    <div class="homepage-sections">
+        <div class="about-me">
+            <div id="pop-1" class="about-pop-up" onclick="myFunction()">
+                <img class="triangle-icon" src="icons/triangle.png">
+                <img class="character-drawing" src="icons/katsuma.webp">
+                <div class="white-box"></div>
+            </div>
+
+            <script>
+                function myFunction() {
+                    const bio_desc = "I am a current NYU undergraduate with a strong background in research, writing, communication and computer science. My passion lies in studying the intertwined nature of environmental issues and social sciences. I'm pursuing a double major in Data Science and Global Liberal Studies with a concentration in Sustainability, Environmental Justice, and Health.";
+                    const skills_1 = "Computer: Java, Python, CSS, HTML, Javascript, Excel, Word";
+                    const skills_2 = "Canva";
+                    const newHTMLelements = '<img class="character-drawing-active" src="icons/katsuma.webp">' +
+                        '<div class="about-me-paragraph"> <div class="hi-line">Hi! I&#39m Lauren.</div>' +
+                        `<div>${bio_desc}</div>` +
+                        `<div class="about-me-skill"> Here are my skills. <ul> <li>${skills_1}</li> <li>${skills_2}</li> </ul></div> </div>` +
+                        '';
+                    document.getElementById("pop-1").innerHTML = newHTMLelements;
+                }
+            </script>
+            <div class="section-title">About Me</div>
+        </div>
+        <div class="projects">
+            <div class="section-header">PROJECTS</div>
+            <div class="category-dropdown">
+                <!-- Computer -->
+                <div class="top-bar">
+                    <div class="project-name">
+                        <a href="https://lmd25.pythonanywhere.com/" target="_blank">Lifeguard Communicate</a>
+                    </div>
+                </div>
+                <div class="position-description">
+                    Currently in the works. Using merriam webster's spanish-english dictionary api and a google
+                    translate api, I provide translations and basic dictionary information for a user request. Sentences
+                    translated from english into spanish come with a pop up dictionary feature when the user hovers over
+                    each word of the sentence. View this project on <a
+                        href="https://github.com/laurenM25/Lifeguard-Translations/tree/main" target="_blank"><span
+                            style="text-decoration:underline;"> github</span>.</a>
+                </div>
+            </div>
+            <div class="category-dropdown">
+                <!-- Papers -->
+                <div class="top-bar">“Implications of Sustainable Plastics on Climate Change and Action”</div>
+                <div class="position-description">
+                    Term paper for Politics of Climate Change class, completed in Fall 2023.
+                    Conducted a thorough literature review and synthesizing key findings into a comprehensive analysis
+                    of the cultural, technological and economic implications of the emerging sustainable plastics
+                    movement. Provided recommendations for future policies and political approaches. Access paper
+                    <a href="https://drive.google.com/file/d/1704M95yYQ5fnFd1aGApW05LYnB81ptQ5/view?usp=sharing"
+                        target="_blank"><span style="text-decoration:underline;"> here</span>.</a>
+                </div>
+
+                <div class="top-bar">“'Violent Criminals': A look into cartel formation in Mexico"</div>
+                <div class="position-description">
+                    Term paper for Latin American Cultures class, completed in Fall 2024. Access paper
+                    <a href="https://drive.google.com/file/d/19EK7lhOnRFJ1QvNeyAlBNIv3v_WM6Byg/view"
+                        target="_blank"><span style="text-decoration:underline;"> here</span>.</a>
+                </div>
+
+                <div class="top-bar">“Cannabis Legalization and Social Justice Frameworks: Comparative Analysis of
+                    Implementation in Canada, Europe, and Various U.S. States"</div>
+                <div class="position-description">
+                    Term paper for a Global Cultures class, completed in Fall 2024. Access paper
+                    <a href="https://drive.google.com/file/d/1UcYyK7U3gx2pbtOJzR2hvhWHWuWGzRwr/view"
+                        target="_blank"><span style="text-decoration:underline;"> here</span>.</a>
+                </div>
+            </div>
+
+            <div class="more-projects">MORE PROJECTS</div>
+            <div class="other-projects-gallery">
+                <a href="https://drive.google.com/file/d/1OgT3E8EXS94xwJqdHQK_A3q4c1MzO8UD/view?usp=sharing"
+                    target="_blank">
+                    <img src="graphics/Haudenosaunee-Thanksgiving-Address.png">
+                </a>
+                <a href="https://docs.google.com/presentation/d/1MY907pMttHEIvhrS_ZmjTRs-vMpdq7lw2XsO0t-EacA/edit?usp=sharing"
+                    target="_blank">
+                    <img src="graphics/lieutenant-nun.png">
+                </a>
+                <a href="https://drive.google.com/file/d/11XEQMS1LBuWR6vuQ4dKkMd1iEGXEfnAf/view?usp=sharing"
+                    target="_blank">
+                    <img src="graphics/gt-presentation.png">
+                </a>
+                <a href="https://nyunews.com/sports/2024/10/31/nyu-equestrian/" target="_blank">
+                    <img src="graphics/horse-girls-article.png">
+                </a>
+            </div>
+        </div>
+        <div class="experience">
+            <div class="general-experience">
+                <div class="section-header">EXPERIENCE</div>
+                <div class="experience-entry">
+                    <div class="top-bar">
+                        <div class="company-name">
+                            GrowNYC
+                        </div>
+                        <div class="position-date">
+                            September 2024 - Present
+                        </div>
+                    </div>
+                    <div class="position-title">
+                        Intern
+                    </div>
+                    <div class="position-description">
+                        Assisting the Education School Gardens team with organizational tasks, including preparing
+                        starter-garden packages and other kits for school programs. Assessing efficacy of programs and
+                        resources, using various python libraries for data analysis and visualization.
+                        Selected for a
+                        year-long NYU program partnering with GrowNYC to promote awareness of social
+                        issues and service opportunities.
+                        Use various python libraries to conduct data analysis and visualization of NYC public school
+                        garden programs and resources to assess the impact of GrowNYC in promoting accessible gardening
+                        opportunities.
+                        Conduct data cleaning, parsing through and standardizing columns for addresses and school names.
+                        Identify missing data and duplicate entries, plotting with GPS coordinates to detect overlooked
+                        regions.
+
+                    </div>
+                    <div class="experience-entry">
+                        <div class="top-bar">
+                            <div class="company-name">
+                                Washington Square News
+                            </div>
+                            <div class="position-date">
+                                August 2024 - Present
+                            </div>
+                        </div>
+                        <div class="position-title">
+                            Copy Chief
+                        </div>
+                        <div class="position-description">
+                            Editing content for accuracy, clarity and consistency, following AP style guidelines.
+                            Creating content for publication, conducting interviews and preliminary research.
+                            Managing copy editor work and workload, problem solving as discrepancies arise.
+                            Conducting interviews and oversee the hiring process for deputies and copy editors.
+
+                        </div>
+                    </div>
+                    <div class="experience-entry">
+                        <div class="top-bar">
+                            <div class="company-name">
+                                West Windsor Historical Society
+                            </div>
+                            <div class="position-date">
+                                August 2024 - Present
+                            </div>
+                        </div>
+                        <div class="position-title">
+                            Researcher
+                        </div>
+                        <div class="position-description">
+                            Conducting historical research relating to the people of the town of West Windsor.
+                            Includes working with microfiche in the New Jersey State Archives, using online databases
+                            incl. Ancestry.com to view and transcribe governmental records such as deeds, wills, and
+                            census records.
+                        </div>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="section-header">SERVICE</div>
+                    <div class="experience-entry">
+                        <div class="top-bar">
+                            <div class="company-name">
+                                New York University
+                            </div>
+                            <div class="position-date">
+                                August 2024 - Present
+                            </div>
+                        </div>
+                        <div class="position-title">
+                            Liberal Studies Service Ambassador
+                        </div>
+                        <div class="position-description">
+                            Selected for a year-long NYU program partnering with GrowNYC to promote awareness of social
+                            issues and service opportunities.
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-entry">
+                    <div class="top-bar">
+                        <div class="company-name">
+                            Sprout Up NYU
+                        </div>
+                        <div class="position-date">
+                            October 2024 - Present
+                        </div>
+                    </div>
+                    <div class="position-title">
+                        Lead Instructor
+                    </div>
+                    <div class="position-description">
+                        Organizing and leading weekly 45-minute environmental lessons in a first-grade classroom at a
+                        NYC public school.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="section-header">CONTACT</div>
+            <div class="contact-col">
+                <div class="contact-paragraph">Feel free to reach out! I'm open to any questions or opportunities.</div>
+                <div class="contact-bar">
+                    <a target="_blank" href="https://linkedin.com/in/lauren-m-donnelly">
+                        <img src="icons/linkedin.png">
+                    </a>
+                    <a target="_blank" href="https://github.com/laurenM25/">
+                        <img src="icons/github-mark/github-mark.png">
+                    </a>
+                    <a class="email" target="_blank" href="mailto:ld2857@nyu.edu">
+                        <img src="icons/email.png">
+                    </a>
+                    <a class="phone-number" target="_blank" href="tel:609-651-3778">
+                        <img src="icons/call.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
 
 </body>
 

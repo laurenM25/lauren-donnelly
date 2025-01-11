@@ -1,0 +1,41 @@
+.project-name {
+    margin-right: 40px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.category-dropdown {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.more-projects {
+    padding-left: 15px;
+    margin-top: 85px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    border-top-color: black;
+    border-bottom-color: black;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+.other-projects-gallery {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 16px;
+    row-gap: 40px;
+    margin-left: 15px;
+}
+
+.other-projects-gallery img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.other-projects-gallery img:hover {
+    cursor: pointer;
+}

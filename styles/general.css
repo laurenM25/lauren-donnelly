@@ -1,0 +1,17 @@
+body {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact img {
+    width: 30px;
+}

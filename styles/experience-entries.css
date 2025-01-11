@@ -1,0 +1,39 @@
+.experience-entry {
+    grid: 1fr 1fr 3fr;
+    color: rgb(62, 61, 61);
+    margin-bottom: 20px;
+}
+
+.top-bar {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: .05rem;
+    margin-right: 28px;
+}
+
+.company-name {
+    margin-right: 40px;
+    text-align: left;
+}
+
+.position-date {
+    margin-left: 60px;
+    text-align: right;
+}
+
+.position-title {
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.position-description {
+    font-weight: lighter;
+    margin-bottom: 30px;
+}
+
+.general-experience {
+    margin-bottom: 20px;
+}

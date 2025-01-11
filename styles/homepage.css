@@ -1,0 +1,172 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 100;
+}
+
+.homepage-sections {
+    margin-top: 70px;
+    display: grid;
+    grid-template-rows: 300px 600px 800px 1fr;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.about-me,
+.projects,
+.experience,
+.contact {
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 25px;
+
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.about-me {
+    background-color: lightgreen;
+    position: relative;
+}
+
+.about-pop-up {
+    width: 100px;
+}
+
+.white-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -15px;
+    height: 75px;
+    width: 15px;
+    background-color: white;
+    z-index: 101;
+
+}
+
+.triangle-icon {
+    width: 20px;
+    transform: rotate(90deg);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.character-drawing {
+    margin-left: -75px;
+    width: 50px;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.about-pop-up:hover .character-drawing {
+    margin-left: -70px;
+}
+
+.about-pop-up:hover .triangle-icon {
+    margin-left: 50px;
+}
+
+.character-drawing-active {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    width: 50px;
+}
+
+.hi-line {
+    margin-bottom: 10px;
+}
+
+.about-me-paragraph {
+    position: absolute;
+    bottom: 15px;
+    right: 80px;
+    padding-left: 50px;
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+.about-me-skill {
+    margin-top: 10px;
+}
+
+/*
+.about-pop-up:active .character-drawing {
+    position: absolute;
+    right: 40px;
+}
+
+.about-pop-up:active .triangle-icon {
+    position: absolute;
+    right: -20px;
+}
+*/
+
+.projects {
+    background-color: rgb(144, 238, 219);
+}
+
+.projects .top-bar {
+    grid-template-columns: 1fr;
+}
+
+.experience {
+    background-color: rgb(144, 219, 238);
+    display: flex;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contact {
+    margin-top: -10px;
+    margin-bottom: 0px;
+    background-color: rgb(144, 185, 238);
+}
+
+/* on section header styling*/
+.section-header {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 15px;
+    background-color: rgb(104, 101, 101);
+    padding-left: 10px;
+}
+
+.experience .section-header {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.contact-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-paragraph {
+    font-size: 20px;
+}
+
+.contact-bar {
+    width: 300px;
+}
