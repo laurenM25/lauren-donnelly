@@ -52,33 +52,40 @@
     top: 0;
     left: 0;
     margin-left: -15px;
-    height: 75px;
+    height: 90px;
     width: 15px;
     background-color: white;
     z-index: 101;
 
 }
 
+.moving-unit {
+    position: relative;
+    top: 10px;
+    background-color: red;
+    transition: 0.6s;
+}
+
 .triangle-icon {
-    width: 20px;
-    transform: rotate(90deg);
-    transition: 1s;
+    position: absolute;
+    bottom: -20px;
+    left: 4px;
+    width: 80px;
     cursor: pointer;
 }
 
 .character-drawing {
+    position: absolute;
+    top: 0px;
+    left: 50px;
     margin-left: -75px;
+    transform: rotate(90deg);
     width: 50px;
     pointer-events: none;
-    transition: 1s;
 }
 
-.about-pop-up:hover .character-drawing {
-    margin-left: -70px;
-}
-
-.about-pop-up:hover .triangle-icon {
-    margin-left: 50px;
+.moving-unit:hover {
+    margin-left: 24px;
 }
 
 .character-drawing-active {
@@ -97,25 +104,13 @@
     bottom: 15px;
     right: 100px;
     padding-left: 50px;
-    padding-right: 30px;
+    padding-right: 35px;
     font-size: 20px;
 }
 
 .about-me-skill {
     margin-top: 10px;
 }
-
-/*
-.about-pop-up:active .character-drawing {
-    position: absolute;
-    right: 40px;
-}
-
-.about-pop-up:active .triangle-icon {
-    position: absolute;
-    right: -20px;
-}
-*/
 
 .projects {
     background-color: rgb(144, 238, 219);

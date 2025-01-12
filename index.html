@@ -17,8 +17,10 @@
     <div class="homepage-sections">
         <div class="about-me">
             <div id="pop-1" class="about-pop-up" onclick="myFunction()">
-                <img class="triangle-icon" src="icons/triangle.png">
-                <img class="character-drawing" src="icons/katsuma.webp">
+                <div class="moving-unit">
+                    <img class="character-drawing" src="icons/me-icon.png">
+                    <img class="triangle-icon" src="icons/click-me.png">
+                </div>
                 <div class="white-box"></div>
             </div>
 
@@ -26,7 +28,7 @@
                 function myFunction() {
                     const bio_desc = "I am a current NYU undergraduate with a strong background in research, writing, communication and computer science. My passion lies in studying the intertwined nature of environmental issues and social sciences. I'm pursuing a double major in Data Science and Global Liberal Studies with a concentration in Sustainability, Environmental Justice, and Health.";
                     const skills_1 = "Computer: Java, Python, CSS, HTML, Javascript, Excel, Word";
-                    const skills_2 = "Canva";
+                    const skills_2 = "Canva, Procreate";
                     const newHTMLelements = '<img class="character-drawing-active" src="graphics/me-drawing.png">' +
                         '<div class="about-me-paragraph"> <div class="hi-line">Hi! I&#39m Lauren.</div>' +
                         `<div>${bio_desc}</div>` +
