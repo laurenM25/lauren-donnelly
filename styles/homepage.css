@@ -85,7 +85,7 @@
     position: absolute;
     top: 5px;
     right: 40px;
-    width: 50px;
+    width: 100px;
 }
 
 .hi-line {
@@ -95,7 +95,7 @@
 .about-me-paragraph {
     position: absolute;
     bottom: 15px;
-    right: 80px;
+    right: 100px;
     padding-left: 50px;
     padding-right: 30px;
     font-size: 20px;
@@ -165,8 +165,17 @@
 
 .contact-paragraph {
     font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.right-col {
+    margin-right: 100px;
 }
 
 .contact-bar {
     width: 300px;
+}
+
+.profile-pic {
+    width: 500px;
 }
