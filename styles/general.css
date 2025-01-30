@@ -15,3 +15,7 @@ a {
 .contact-bar img {
     width: 30px;
 }
+
+.hover_blue:hover {
+    color: blue;
+}
