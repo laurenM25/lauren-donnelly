@@ -16,7 +16,7 @@
 .homepage-sections {
     margin-top: 70px;
     display: grid;
-    grid-template-rows: 300px 1fr 800px 1fr;
+    grid-template-rows: 300px 1fr 1fr 600px;
     margin-left: 15px;
     margin-right: 15px;
 }

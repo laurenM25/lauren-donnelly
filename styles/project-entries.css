@@ -25,17 +25,25 @@
 
 .other-projects-gallery {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
     margin-left: 15px;
 }
 
 .other-projects-gallery img {
-    width: 200px;
+    width: 360px;
+    height: 216px;
+    object-fit: cover;
     cursor: pointer;
+    filter: url(filters.svg#grayscale);
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .5s ease-in-out;
 }
 
 .other-projects-gallery img:hover {
     cursor: pointer;
+    filter: none;
+    -webkit-filter: none;
+    -webkit-transform: scale(0.95);
 }
