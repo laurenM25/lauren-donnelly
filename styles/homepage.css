@@ -38,6 +38,16 @@
     transform: translateX(-50%)
 }
 
+.section-header a {
+    color: white;
+    transition-duration: 1.5s;
+}
+
+.section-header a:hover {
+    color: rgb(168, 168, 220);
+    transition-duration: 1.5s;
+}
+
 .about-me {
     background-color: lightgreen;
     position: relative;
